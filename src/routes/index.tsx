@@ -94,8 +94,8 @@ const HIGHLIGHT_MARKETS = [
 ];
 
 const STATS = [
-  { value: "25+", label: "Countries Served" },
-  { value: "500+", label: "Verified Suppliers" },
+  { value: "5+", label: "Countries Served" },
+  { value: "50+", label: "Verified Suppliers" },
   { value: "10+", label: "Industries Covered" },
   { value: "100%", label: "Quality Commitment" },
 ];
@@ -199,7 +199,7 @@ function Home() {
   return (
     <>
       {/* HERO */}
-      <section className="relative min-h-[110vh] flex items-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center overflow-hidden">
         <img
           src={bgPort}
           alt="Global shipping port at sunset"
@@ -209,7 +209,7 @@ function Home() {
         />
         <div className="absolute inset-0 bg-gradient-to-br from-navy-deep/95 via-navy-deep/80 to-navy/70" />
         <FloatingSilhouettes />
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 lg:py-10 w-full">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 lg:py-4 w-full">
           <div className="max-w-4xl">
             <div
               className="inline-flex items-center gap-2 rounded-full border border-gold/30 bg-gold/10 backdrop-blur px-4 py-1.5 mb-8 animate-float-up"
@@ -228,7 +228,7 @@ function Home() {
               <span className="block text-gradient-gold italic">Global</span>
             </h1>
             <p
-              className="text-xl lg:text-2xl text-primary-foreground/90 mb-5 max-w-3xl leading-snug font-light animate-float-up"
+              className="text-xl lg:text-3xl text-primary-foreground/90 mb-5 max-w-4xl leading-snug font-light animate-float-up"
               style={{ animationDelay: "0.3s" }}
             >
               Connecting Markets. Creating Opportunities. Delivering Worldwide.
@@ -253,15 +253,15 @@ function Home() {
               </Link>
               <Link
                 to="/services"
-                className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/25 bg-primary-foreground/5 backdrop-blur px-7 py-4 text-sm font-medium text-primary-foreground hover:bg-primary-foreground/15 hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/25 bg-primary-foreground/5 backdrop-blur px-7 py-5 text-sm font-medium text-primary-foreground hover:bg-primary-foreground/15 hover:-translate-y-0.5 transition-all"
               >
                 Explore Services
               </Link>
               <Link
                 to="/contact"
-                className="inline-flex items-center gap-2 rounded-md border border-primary-foreground/15 px-7 py-4 text-sm font-medium text-primary-foreground/90 hover:text-gold hover:border-gold/40 hover:-translate-y-0.5 transition-all"
+                className="inline-flex items-center gap-5 rounded-md border border-primary-foreground/15 px-10 py-5 text-sm font-medium text-primary-foreground/90 hover:text-gold hover:border-gold/40 hover:-translate-y-0.5 transition-all"
               >
-                Contact Us <MessageCircle className="h-4 w-4" />
+                Contact Us <MessageCircle className="h-7 w-5" />
               </Link>
             </div>
           </div>
@@ -269,7 +269,7 @@ function Home() {
       </section>
 
       {/* STATS STRIP */}
-      <section className="relative py-12 overflow-hidden">
+      <section className="relative py-15 -mt-25 overflow-hidden">
         <img
           src={bgWarehouse}
           alt=""
@@ -280,7 +280,7 @@ function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-navy-deep/90" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-10 lg:px-8 grid grid-cols-2 md:grid-cols-4 gap-10 text-center">
           {STATS.map((s, i) => (
             <div
               key={s.label}
@@ -382,7 +382,7 @@ function Home() {
       </section>
 
       {/* CORE SERVICES PREVIEW */}
-      <section className="py-14 lg:py-20 bg-cream">
+      <section className="py-10 lg:py-15 bg-cream">
         <div className="max-w-7xl mx-auto px-4 sm:px-3 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="inline-flex items-center gap-2 mb-5 justify-center">
@@ -432,7 +432,7 @@ function Home() {
       </section>
 
       {/* WHY CHOOSE US */}
-      <section className="py-14 lg:py-20 bg-background">
+      <section className="py-10 lg:py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-14">
             <div className="inline-flex items-center gap-2 mb-5 justify-center">
